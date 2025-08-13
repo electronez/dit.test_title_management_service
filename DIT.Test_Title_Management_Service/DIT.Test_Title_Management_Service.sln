@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIT.Test_Title_Management_Service.Host", "DIT.Test_Title_Management_Service.Host\DIT.Test_Title_Management_Service.Host.csproj", "{3DBCD072-72DE-4133-9BB8-686EC5FEBC79}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3FA88D3D-859F-49D8-86AA-929AA0E51470}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yaml = docker-compose.yaml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIT.Test_Title_Management_Service.Domain", "DIT.Test_Title_Management_Service.Domain\DIT.Test_Title_Management_Service.Domain.csproj", "{51FDAD1F-2727-43BC-BBB1-252887915DCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIT.Test_Title_Management_Service.Application", "DIT.Test_Title_Management_Service.Application\DIT.Test_Title_Management_Service.Application.csproj", "{0996DF09-9004-4F53-AF26-C82BFFFC7882}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIT.Test_Title_Management_Service.Persistence", "DIT.Test_Title_Management_Service.Persistence\DIT.Test_Title_Management_Service.Persistence.csproj", "{6E0934AC-2D71-4471-A628-2FB1B8FC5518}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3DBCD072-72DE-4133-9BB8-686EC5FEBC79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DBCD072-72DE-4133-9BB8-686EC5FEBC79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DBCD072-72DE-4133-9BB8-686EC5FEBC79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DBCD072-72DE-4133-9BB8-686EC5FEBC79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51FDAD1F-2727-43BC-BBB1-252887915DCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51FDAD1F-2727-43BC-BBB1-252887915DCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51FDAD1F-2727-43BC-BBB1-252887915DCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51FDAD1F-2727-43BC-BBB1-252887915DCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0996DF09-9004-4F53-AF26-C82BFFFC7882}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0996DF09-9004-4F53-AF26-C82BFFFC7882}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0996DF09-9004-4F53-AF26-C82BFFFC7882}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0996DF09-9004-4F53-AF26-C82BFFFC7882}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E0934AC-2D71-4471-A628-2FB1B8FC5518}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E0934AC-2D71-4471-A628-2FB1B8FC5518}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E0934AC-2D71-4471-A628-2FB1B8FC5518}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E0934AC-2D71-4471-A628-2FB1B8FC5518}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
