@@ -161,7 +161,7 @@ public class Worker
         // Правило: если работник уже назначен объект, мы не можем назначить повторно
         if (this.assignments.Any(x => x.TitleId == titleId && x.Role == role && x.ChapterId == chapterId))
         {
-            return Result.Fail("Работник уже назначен на эту роль для тайтла");
+            return Result.Fail("Работник уже назначен на эту роль");
         }
 
         return null;
