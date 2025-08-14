@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIT.Test_Title_Management_S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIT.Test_Title_Management_Service.Persistence", "DIT.Test_Title_Management_Service.Persistence\DIT.Test_Title_Management_Service.Persistence.csproj", "{6E0934AC-2D71-4471-A628-2FB1B8FC5518}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIT.Test_Title_Management_Service.Tests", "DIT.Test_Title_Management_Service.Tests\DIT.Test_Title_Management_Service.Tests.csproj", "{57C1AEF0-6554-4096-8342-AAC06D824EA4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,5 +37,9 @@ Global
 		{6E0934AC-2D71-4471-A628-2FB1B8FC5518}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E0934AC-2D71-4471-A628-2FB1B8FC5518}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E0934AC-2D71-4471-A628-2FB1B8FC5518}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57C1AEF0-6554-4096-8342-AAC06D824EA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57C1AEF0-6554-4096-8342-AAC06D824EA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57C1AEF0-6554-4096-8342-AAC06D824EA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57C1AEF0-6554-4096-8342-AAC06D824EA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

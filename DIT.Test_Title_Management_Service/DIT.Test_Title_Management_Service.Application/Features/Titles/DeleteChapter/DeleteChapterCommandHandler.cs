@@ -17,14 +17,13 @@ public class DeleteChapterCommandHandler(IApplicationDbContext context)
         }
 
         var chapter = title.Chapters.SingleOrDefault(x => x.Id == command.ChapterId);
-        if (chapter is null)
+        if (chapter is not null)
         {
-            return Result.Fail(new NotFoundError<Chapter, Guid>(command.ChapterId));
+            title.RemoveChapter(chapter);
+            context.Titles.Update(title);
+            await context.SaveChangesAsync(ct);
         }
 
-        title.RemoveChapter(chapter);
-        context.Titles.Update(title);
-        await context.SaveChangesAsync(ct);
         return Result.Ok();
     }
 }

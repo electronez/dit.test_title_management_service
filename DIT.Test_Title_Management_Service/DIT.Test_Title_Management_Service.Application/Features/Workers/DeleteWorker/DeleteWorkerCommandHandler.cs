@@ -7,13 +7,12 @@ public class DeleteWorkerCommandHandler(IApplicationDbContext context)
     public async Task<Result> Handle(DeleteWorkerCommand command, CancellationToken ct)
     {
         var worker = await context.Workers.SingleOrDefaultAsync(x => x.Id == command.Id, ct);
-        if (worker is null)
+        if (worker is not null)
         {
-            return Result.Ok();
+            context.Workers.Remove(worker);
+            await context.SaveChangesAsync(ct);
         }
 
-        context.Workers.Remove(worker);
-        await context.SaveChangesAsync(ct);
         return Result.Ok();
     }
 }
