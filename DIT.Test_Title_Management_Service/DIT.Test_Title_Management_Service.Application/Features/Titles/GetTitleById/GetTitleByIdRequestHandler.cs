@@ -1,6 +1,5 @@
 ﻿namespace DIT.Test_Title_Management_Service.Application.Features.Titles.GetTitleById;
 
-using DIT.Test_Title_Management_Service.Application.Features.Titles.GetTitles;
 using DIT.Test_Title_Management_Service.Application.Results;
 using DIT.Test_Title_Management_Service.Domain.Titles;
 using Microsoft.EntityFrameworkCore;
