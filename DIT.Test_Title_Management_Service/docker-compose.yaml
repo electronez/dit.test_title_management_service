@@ -1,0 +1,43 @@
+﻿services:
+  dit.test_title_management_service.host:
+    image: dit.test_title_management_service.host
+    build:
+      context: .
+      dockerfile: DIT.Test_Title_Management_Service.Host/Dockerfile
+    environment:
+      ConnectionStrings__PostgreSQL: "Host=DIT.Postgres; Port=5432; Database=public; Username=postgres; Password=postgres; Include Error Detail=true; Log Parameters = true;"
+    ports:
+      - "8080:8080"
+      - "8081:8081"
+    networks:
+      - ditNetwork
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  postgres:
+    container_name: DIT.Postgres
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+    ports:
+      - '5434:5432'
+    volumes:
+      - postgres:/var/lib/postgresql/data
+    networks:
+      - ditNetwork
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U postgres" ]
+      interval: 1s
+      timeout: 30s
+      retries: 30
+
+volumes:
+  postgres:
+    driver: local
+networks:
+  ditNetwork:
+    name: "ditNetwork"
+    driver: bridge
